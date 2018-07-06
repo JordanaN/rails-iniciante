@@ -1,0 +1,22 @@
+<h1> Listing Person </h1>
+
+<table>
+    <thead>
+        <tr>
+            <th> Name </th>
+            <th> Age </th>
+        </tr>
+    </thead>
+    <tbody>
+        <% @people.each do |p|%>
+            <tr>
+                <td> <%= p.name %> </td>
+                <td> <%= p.age %> </td>
+                <%# o = rederiza algo na page %>
+            </tr>
+        <% end %>
+    </tbody>
+</table>
+
+    <%= link_to("create", :controller => "person", :action => "new") %>
+
